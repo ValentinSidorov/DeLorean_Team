@@ -1,5 +1,5 @@
 # My descript text
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Zingam/Markdown-Document-UML-Use-Test/master/UML/Instance.puml)
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://github.com/ValentinSidorov/DeLorean_Team/docs/UML/Instance.puml)
 
 # My descript text2
 @startuml Init_device

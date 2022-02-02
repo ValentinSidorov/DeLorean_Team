@@ -1,7 +1,7 @@
 # My descript text
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://github.com/ValentinSidorov/DeLorean_Team/blob/SidorovValentin/docs/UML/Srtuct_vector.puml)
 # My descript text2
-'''puml
+```puml
 @startuml Init_device
 title "Функция Init_device()"
     Init_device -> cabin : Init_cabin(Set_mov_cabin)
@@ -16,4 +16,4 @@ title "Функция Init_device()"
     Init_device -> In_Keys : Init_Dan_Floor(Set_Foor)
     In_Keys -[#0000FF]-> Init_device : Set_Foor(SET_SWITCHES_FLOOR)
 @enduml
-'''
+```

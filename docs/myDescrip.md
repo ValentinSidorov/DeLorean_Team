@@ -1,6 +1,9 @@
 # My descript text
+
 ![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://github.com/ValentinSidorov/DeLorean_Team/blob/SidorovValentin/docs/UML/Srtuct_vector.puml)
+
 # My descript text2
+
 ```puml
 @startuml Init_device
 title "Функция Init_device()"

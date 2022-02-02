@@ -1,5 +1,5 @@
 # My descript text
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://github.com/ValentinSidorov/DeLorean_Team/docs/UML/Instance.puml)
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://github.com/ValentinSidorov/DeLorean_Team/docs/UML/Struct_vector.puml)
 
 # My descript text2
 @startuml Init_device

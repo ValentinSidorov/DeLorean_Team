@@ -20,3 +20,8 @@ title "Функция Init_device()"
     In_Keys -[#0000FF]-> Init_device : Set_Foor(SET_SWITCHES_FLOOR)
 @enduml
 ```
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Zingam/Markdown-Document-UML-Use-Test/master/UML/Instance.puml)
+
+# My descript text3
+
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/ValentinSidorov/DeLorean_Team/blob/SidorovValentin/docs/UML/Srtuct_vector.puml)

@@ -1,6 +1,6 @@
 #include <string>
 
-void print_hello (void); 
+void print_hello(void);
 
 void print_arg(const std::string& str);
 

@@ -38,3 +38,8 @@ target_link_libraries(
 include(GoogleTest)
 gtest_discover_tests(tests)
 
+include_directories(tests/integration/include)
+
+add_executable(test_prog
+              tests/integration/test_prog.cpp)	
+

@@ -1,3 +1,7 @@
+# main.cpp
+Back to [README.md](../README.md)
+
+```
 #include <iostream>
 
 #include "logger.h"
@@ -33,3 +37,20 @@ int main(int argc, char *argv[]) {
   LOG("Finished", INFO);
   return 0;
 }
+```
+
+
+## Description:
+![Class Diagram](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/ValentinSidorov/DeLorean_Team/SidorovValentin/docs/UML/Struct_prog.puml)
+
+
+## Syntax:
+
+
+## Parameters:
+
+
+## Returns:
+
+
+## Example Code:

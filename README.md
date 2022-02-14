@@ -2,19 +2,24 @@
 Source project automotive BASECAMP
 
 
-## Build
+## Build and run
 ```
 cd build
 cmake ../
 make
-```
-
-## Run
-``` 
-./main
+./main ../tests/example.yml
 ```
 
 ## Before commit   
+
+### Check that your branch updated with main 
+```
+git checkout main
+git pull
+git checkout validator
+git merge main
+git push
+```
 
 ### Make sure your code matches the Google C++ Style Guide.  
 For automatic format of all code you can use command: 
@@ -35,7 +40,16 @@ cmake ../
 make
 ./tests
 ```
+### Description of the project documentation 
+
 | Document | Description |
 |----|----|
-| [Ы](./doc/dlt_build_options.md) | The CMake build system provides a large amount of build options. They let you turn on or off certain features and provide alternative implementation details. |
-| [LogStorage](doc/dlt_offline_logstorage.md) | The DLT Daemon as well as the DLT libary provide buffers for caching log data during absence of a consumer. However, some use cases require to write large amounts of log message e.g. to mass storages for long term storage or because no other means of exfiltrating the log data is available. |
+| [task](docs/task.md) | Setting a task for a project.|
+| [types](./docs/types.md) | Description of the structure of the yml file parser. |
+| [yaml_parser](docs/yaml_parser.md) | Description of the yml file parser procedure.|
+| [process_start](docs/process_start.md) | Description of running processes.|
+| [logger](docs/logger.md) | Description of the message logging function.|
+| [main](docs/main.md) | Description of the main function.|
+| [integration_test](docs/integration_test.md) | Description of the methodology for conducting integration tests.|
+| [unit_test](docs/unit_test.md) | Description of the methodology for conducting unit tests.|
+

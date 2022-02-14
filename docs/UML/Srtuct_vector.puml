@@ -5,7 +5,7 @@ class set_prog_start {
   string executable_path;
   string stdout_config_file;
   bool stdout_config_truncate;
-  int run_prog;
+  pid_t pid;
   vector<string> cmd_arguments;
 }
 

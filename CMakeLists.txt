@@ -1,9 +1,14 @@
 project(DeLorianExecutionManager)
 cmake_minimum_required(VERSION 3.11) 
 
+include_directories(include
+                    src)
+
 add_executable(main 
+              src/logger.cpp
               src/main.cpp 
-              src/yaml_parse.cpp)	
+              src/yaml_parse.cpp
+              src/process_start.cpp)	
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
@@ -24,6 +29,7 @@ add_executable(
   tests/unit
   tests/unit/tests.cpp
   tests/unit/yaml_parse_test.cpp
+  tests/unit/process_start_test.cpp
 )
 target_link_libraries(
   tests
@@ -33,3 +39,4 @@ target_link_libraries(
 
 include(GoogleTest)
 gtest_discover_tests(tests)
+

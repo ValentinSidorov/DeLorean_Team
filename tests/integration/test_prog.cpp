@@ -11,26 +11,15 @@
 using namespace std;
 
 void print_hello(void) {
-  for (int i = 0; i < 10; i++) {
-    std::cout << "Hello world!\n";
-  }
+  std::cout << "Hello world!\n";
 
   std::ofstream fout("filename.txt");
 
   if (!fout.is_open()) {
     std::cout << "mistake in opening the file\n";
-
-  } else {
-    std::cout << "filename.txt has been successfully created, you can check it "
-                 "out in your current directory\n";
   }
 
-  int i = 0;
-
-  while (i < 10) {
-    fout << "Hello world!\n";
-    i++;
-  }
+  fout << "Hello world!\n";
 
   fout.close();
 
@@ -119,12 +108,6 @@ void print_arg3(const std::string& str3) {
     fout << str3 << std::endl;
 
     num++;
-
-    if (num == 5) {
-      fout.close();
-
-      break;
-    }
 
     sleep(5);
   }

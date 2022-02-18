@@ -1,6 +1,21 @@
 # DeLorean_Team
-Source project automotive BASECAMP
+## Description of the project documentation 
 
+| Document | Description |
+|----|----|
+| [task](docs/task.md) | Setting a task for a project.|
+| [types](./docs/types.md) | Description of the structure of the yml file parser. |
+| [yaml_parser](docs/yaml_parser.md) | Description of the yml file parser procedure.|
+| [process_start](docs/process_start.md) | Description of running processes.|
+| [logger](docs/logger.md) | Description of the message logging function.|
+| [main](docs/main.md) | Description of the main function.|
+| [integration_test](docs/integration_test.md) | Description of the methodology for conducting integration tests.|
+| [unit_test](docs/unit_test.md) | Description of the methodology for conducting unit tests.|
+| [gcov_test](docs/gcov_test.md) | Description of the gcov tests.|
+| [recommend](docs/recommend.md) | Recommendations for the future development of the project.|
+
+---
+Source project automotive BASECAMP
 
 ## Build and run
 ```
@@ -40,16 +55,4 @@ cmake ../
 make
 ./tests
 ```
-### Description of the project documentation 
-
-| Document | Description |
-|----|----|
-| [task](docs/task.md) | Setting a task for a project.|
-| [types](./docs/types.md) | Description of the structure of the yml file parser. |
-| [yaml_parser](docs/yaml_parser.md) | Description of the yml file parser procedure.|
-| [process_start](docs/process_start.md) | Description of running processes.|
-| [logger](docs/logger.md) | Description of the message logging function.|
-| [main](docs/main.md) | Description of the main function.|
-| [integration_test](docs/integration_test.md) | Description of the methodology for conducting integration tests.|
-| [unit_test](docs/unit_test.md) | Description of the methodology for conducting unit tests.|
 

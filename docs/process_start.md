@@ -8,7 +8,7 @@ Back to [README.md](../README.md)
 
 
 ## Syntax:
-
+![Class Diagram](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/ValentinSidorov/DeLorean_Team/SidorovValentin/docs/UML/Struct_prog.puml)
 
 ## Parameters:
 set_prog_start - Reference on structure contains information about process, that we need to start

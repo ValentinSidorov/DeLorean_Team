@@ -2,21 +2,46 @@
 title "Program start program from Yaml file"
 class  yaml_parse  << (H,orchid) >>
 class  process_start  << (H,orchid) >>
-class  types  << (H,orchid) >>
+class  types  << (H,orchid) >> {
+  string name
+  string executable_path
+  string stdout_config_file
+  bool stdout_config_truncate
+  pid_t pid
+  vector<string> cmd_arguments
+}
+enum   typelog {
+     DEBUG 
+     INFO 
+     WARN 
+     ERROR 
+     }
+
+class  LOG  << (I,orchid) >> {
+  Logger *getInstance()
+  void test()
+  void set_log_path()
+  void log()
+}
 
 yaml_file --|> main :"file_name.yaml"
 
+
+main --|> LOG
 
 main --|> process_start :"<vector> set_prog_start"
 
 main --|> yaml_parse :"parse_yaml(file_name.yaml)"
 yaml_parse --|> main :"<vector> set_prog_start"
+yaml_parse --|> LOG
 
 process_start --|> types :"<include>"
 yaml_parse --|> types :"<include>"
 
 process_start --|> test_folder1 :"set_prog_start 1"
 process_start --|> test_folder2 :"set_prog_start 2"
+
+process_start --|> LOG
 
 test_folder1 --|> example_app
 test_folder2 --|> example_app1  

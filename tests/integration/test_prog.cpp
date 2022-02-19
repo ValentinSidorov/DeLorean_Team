@@ -96,8 +96,6 @@ int main(int argc, char* argv[]) {
   }
 
   else if ((strstr(argv[1], "--text=") != NULL) && argc == 2) {
-    
-
     string str(argv[1]);
 
     int n = str.find('=');
@@ -136,7 +134,6 @@ int main(int argc, char* argv[]) {
 
   else if (argc == 3 && (strstr(argv[1], "--text=") != NULL) &&
            argv[2] == string("--loop")) {
-
     string str3(argv[1]);
 
     int n3 = str3.find('=');
@@ -145,13 +142,10 @@ int main(int argc, char* argv[]) {
       str3.erase(0, n3 + 1);
     }
 
-
-
     print_arg3(str3);
 
     exit(0);
   } else {
-
     cout << "You've made an error while entering the arguments, try again"
          << endl;
   }

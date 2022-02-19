@@ -77,7 +77,8 @@ pid_t start_process(set_prog_start &program) {
       // add error info
       std::string error_message("Error in proscess_start. Function execv()\n");
       error_message += "Couldn't start program: " + program.name + "\n";
-      error_message += "Executable path = " + program.executable_path + "\nError info: ";
+      error_message +=
+          "Executable path = " + program.executable_path + "\nError info: ";
       error_message.append(strerror(errno));
       LOG(error_message, ERROR);
       exit(1);

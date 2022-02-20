@@ -59,5 +59,5 @@ if(GCOVR_PATH)
             NAME code_coverage
             EXECUTABLE tests
             DEPENDENCIES tests
-            EXCLUDE "build/_deps/*")
+            EXCLUDE "build/_deps/*" "tests/*")
 endif() # NOT GCOVR_PATH

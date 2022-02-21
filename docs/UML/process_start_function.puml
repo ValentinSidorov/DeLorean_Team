@@ -1,0 +1,29 @@
+@startuml
+title "Start process function"
+' main process
+
+package Main_process <<Rectangle>> {
+  class  set_prog_start  << (H,orchid) >> {
+  string name
+  string executable_path
+  string stdout_config_file
+  bool stdout_config_truncate
+  pid_t pid
+  vector<string> cmd_arguments
+}
+  class  main  << (H,orchid) >>
+  class  start_process  << (H,orchid) >>
+  main -down-|> start_process :"struct set_prog_start"
+  start_process --|> fork
+  fork --|> Child_process
+  fork --|> main :"pid_t process_pid"
+  start_process : start_process(set_prog_start &program)
+}
+' child process
+package Child_process <<Rectangle>> {
+  execv --|> Program
+  execv : execv(const char *__path, char *const *__argv))
+  Program : # program from parsed file
+}
+
+@enduml

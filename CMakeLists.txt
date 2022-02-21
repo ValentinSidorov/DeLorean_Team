@@ -44,13 +44,13 @@ target_link_libraries(
 include(GoogleTest)
 gtest_discover_tests(tests)
 
-<<<<<<< HEAD
+
 include_directories(tests/integration/include)
 
 add_executable(test_prog
               tests/integration/test_prog.cpp)	
 
-=======
+
 
 # make target for gcov reports(if we have gcovr app)
 find_program( GCOVR_PATH gcovr PATHS ${CMAKE_SOURCE_DIR}/scripts/test)
@@ -68,4 +68,4 @@ if(GCOVR_PATH)
             DEPENDENCIES tests
             EXCLUDE "build/_deps/*")
 endif() # NOT GCOVR_PATH
->>>>>>> 32b0edff6f5d5c8e44885fc3c444924cbe71da44
+

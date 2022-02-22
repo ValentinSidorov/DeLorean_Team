@@ -7,12 +7,7 @@ Back to [README.md](../README.md)
 
 ## Description:
 
-Now if you just run ./test_prog, there will be the output of "Hello world" in console window, 
-
-creatiion of txt file with writing down  "Hello world" into it and exit.
-
-
-
+Now if you just run ./test_prog, there will be the output of "Hello world" in console window, creatiion of txt file with writing down  "Hello world" into it and exit.
 
 
 If you enter ./test_prog --text="some text", 

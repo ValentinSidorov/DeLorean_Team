@@ -4,7 +4,7 @@ Back to [README.md](../README.md)
 ## Test program:
 For testsing execution manager was created testing program: test_prog.
 
-If you just run ./test_prog, there will be the output of "Hello world" in console window, 
+If you just run ./test_prog from build folder (after make), there will be the output of "Hello world" in console window, 
 
 creatiion of txt file with writing down  "Hello world" into it and exit.
 

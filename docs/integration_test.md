@@ -1,13 +1,10 @@
-# integration_test
+# integration test
 Back to [README.md](../README.md)
-```
-#include "yaml_parse.h"
-```
 
+## Test program:
+For testsing execution manager was created testing program: test_prog.
 
-## Description:
-
-Now if you just run ./test_prog, there will be the output of "Hello world" in console window, 
+If you just run ./test_prog, there will be the output of "Hello world" in console window, 
 
 creatiion of txt file with writing down  "Hello world" into it and exit.
 
@@ -24,14 +21,21 @@ If you enter --text1="some words" --text2="something else"
 If you enter --text="some other text" --loop 
                                              the result will be the output "some other text" in an endless loop to stdout and file with an interval of 5 seconds 
   
+## Robot test framework
 
-## Syntax:
+Firstly need to install robot framework.
 
+`pip3 install robotframework`
 
-## Parameters:
+than check installation
 
+`robot --version`
 
-## Returns:
+To run tests:
 
+```
+cd tests/integration/
+robot test.robot
+```
 
-## Example Code:
+You will receive output in console and in  report.html files 

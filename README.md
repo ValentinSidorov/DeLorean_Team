@@ -24,6 +24,18 @@ make
 ./main ../tests/example.yml
 ```
 
+## Create code coverage report
+<b> Firstly, you need to install gcovr:</b>
+```
+sudo apt-get install gcovr
+```
+<b>Create a report:  </b>
+```
+cd build
+make code_coverage
+cd ../tests/code_coverage/report
+```
+
 ## Before commit   
 
 ### Check that your branch updated with main 
@@ -55,3 +67,7 @@ make
 ./tests
 ```
 
+### Be sure your code passed cppcheck without warnings 
+```
+cppcheck --enable=all --inconclusive -i./build --std=c++14 main.cpp --suppress=missingIncludeSystem  -I include/ ./
+```

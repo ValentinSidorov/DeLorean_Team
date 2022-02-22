@@ -22,7 +22,7 @@ If you enter --text1="some words" --text2="something else"
                                            the result will be the output "some words" and "something else" to stdout and file and exit;   
 
 If you enter --text="some other text" --loop 
-                                             the resukt will be the output "some other text" in an endless loop to stdout and file with an interval of 5 seconds 
+                                             the result will be the output "some other text" in an endless loop to stdout and file with an interval of 5 seconds 
   
 
 ## Syntax:

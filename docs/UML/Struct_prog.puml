@@ -54,7 +54,6 @@ test_folder2 : arg_1
 test_folder2 : arg_2
 
 yaml_parse : yaml_parse(filename)
-process_start : start_process(<vector>set_prog_start)
-
+process_start : start_process(set_prog_start &program)
 
 @enduml

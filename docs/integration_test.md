@@ -20,13 +20,3 @@ If you enter --text="some other text" --loop
                                              the result will be the output "some other text" in an endless loop to stdout and file with an interval of 5 seconds 
   
 
-## Syntax:
-
-
-## Parameters:
-
-
-## Returns:
-
-
-## Example Code:

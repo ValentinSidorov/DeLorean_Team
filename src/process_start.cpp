@@ -1,7 +1,5 @@
 #include "process_start.h"
 
-#include "logger.h"
-
 pid_t start_process(set_prog_start &program) {
   pid_t process_pid;
   // create new process

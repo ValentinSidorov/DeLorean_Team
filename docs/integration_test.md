@@ -39,3 +39,10 @@ robot test.robot
 ```
 
 You will receive output in console and in  report.html files 
+
+Example console output:
+![image](https://user-images.githubusercontent.com/9269521/155291062-7f41763c-80d4-4d4a-bd33-c69e44df3921.png)
+
+Example report.html output:
+![image](https://user-images.githubusercontent.com/9269521/155291094-8f7d50f1-842c-4812-bf37-f198ea4658ac.png)
+

@@ -1,0 +1,8 @@
+processes:
+  - name: test_prog1
+    executable-path: ../../build/test_prog
+    stdout-config:
+      file: test_prog1_out.txt
+      mode: truncate
+    cmd-arguments:
+      - option-name: --text=helloo

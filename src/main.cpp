@@ -20,10 +20,9 @@ int main(int argc, char *argv[]) {
         one_program.pid = start_process(one_program);
       }
       // wait until ALL processes are done
-      int pid = 0;
       int process_status = 0;
       while (1) {
-        pid = wait(&process_status);
+        int pid = wait(&process_status);
         // ECHILD - error, when we don't have alive processes
         if (pid == -1 && errno == ECHILD) {
           break;

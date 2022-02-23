@@ -17,9 +17,13 @@ message is std::string
 ERROR are enum that marks type of message and allows to filter message by type:
 
 DEBUG – The DEBUG Level designates fine-grained informational events that are most useful to debug an application.
+
 INFO – The INFO level designates informational messages that highlight the progress of the application at coarse-grained level.
+
 WARN – The WARN level designates potentially harmful situations.
+
 ERROR – The ERROR level designates error events that might still allow the application to continue running.
+
 
 ## Returns:
 

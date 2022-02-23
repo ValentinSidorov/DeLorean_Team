@@ -19,10 +19,17 @@ int main(int argc, char *argv[]) {
         // pid changes in function
         one_program.pid = start_process(one_program);
       }
-      // wait until processes are done
-      wait(nullptr);
+      // wait until ALL processes are done
+      int pid = 0;
+      int process_status = 0;
+      while (1) {
+        pid = wait(&process_status);
+        // ECHILD - error, when we don't have alive processes
+        if (pid == -1 && errno == ECHILD) {
+          break;
+        }
+      };
     } catch (std::exception &ex) {
-      //!!! stdout stream doesn't work in CHILD process(redirected to file)
       LOG(std::string("Ouch! That hurts, because: ") + ex.what(), ERROR);
       cout << "Ouch! That hurts, because: " << ex.what() << "!" << endl;
     }

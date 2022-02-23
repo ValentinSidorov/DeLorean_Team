@@ -1,0 +1,32 @@
+@startuml Init_device
+title "Convert yaml file to vector."
+class set_prog_start {
+  string name;
+  string executable_path;
+  string stdout_config_file;
+  bool stdout_config_truncate;
+  pid_t pid;
+  vector<string> cmd_arguments;
+}
+
+note left
+processes:
+  - name: test_name
+    executable-path: /Desktop/test_folder
+    stdout-config:
+        file: /var/log/apps/example_app.log
+        mode: truncate
+    cmd-arguments:
+        - option-name: arg1
+        - option-name: arg2
+    - name: test_name1
+    executable-path: /Desktop/test_folder
+    stdout-config:
+        file: /var/log/apps/example_app1.log
+        mode: append
+    cmd-arguments:
+        - option-name: arg1
+        - option-name: arg2
+end note
+
+@enduml

@@ -95,7 +95,12 @@ clang-format -i -style=Google src/main.cpp
 
 In our project configured system that checks some steps in automatic mode on commit or pull request to `main` branch. 
 
-Need to check that all this test passed:
+In pull request open:
+![image](https://user-images.githubusercontent.com/9269521/155344294-cd9461bd-b11d-491e-a41e-1f84fadcf90a.png)
+
+![image](https://user-images.githubusercontent.com/9269521/155344406-1409738f-ba77-49bf-ae32-3b0bc70b8ad3.png)
+
+Need to check that all this test passed (must be gray, not red):
 
 - Build: checks that project can be built
 - Tests: check that unit tests passed

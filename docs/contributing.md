@@ -9,7 +9,7 @@ For contribute to repo:
 
 3) Cover your change with gooletest 
 
-3) [Check that build run successful](#build-and-run) 
+3) [Check that the build runs successfully](#build-and-run) 
 
 4) [That unit tests pass](#check-that-unit-tests-passed)
 

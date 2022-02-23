@@ -41,6 +41,7 @@ pid - Program pid(0 - if program not started).
 
 ## Returns:
 
+After the application is launched, its pid appears in the pid variable.
 
 ## Example Code:
 ```
